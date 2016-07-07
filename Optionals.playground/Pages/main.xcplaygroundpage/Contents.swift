@@ -12,7 +12,7 @@
 /*: question1
  ### 1. What is the type of the variable `pet` declared below?
  */
-var pet = "turtle 🐢"
+var pet = "turtle 🐢" // String
 
 
 
@@ -22,7 +22,7 @@ var pet = "turtle 🐢"
 /*: question2
  ### 2. What is the type of the variable `petName` declared below?
  */
-var petName: String?
+var petName: String? // String?
 
 
 
@@ -33,9 +33,7 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
-
-
+// nil
 
 
 
@@ -44,7 +42,7 @@ var petName: String?
  */
 // write your code here
 
-
+petName = "Dummy" // String?
 
 
 
@@ -55,7 +53,7 @@ var petName: String?
  */
 // write your code here
 
-
+print(petName)
 
 
 
@@ -66,7 +64,11 @@ var petName: String?
  */
 // write your code here
 
-
+if petName != nil {
+    print(petName)
+} else {
+    print("The pet has no name")
+}
 
 
 
@@ -77,7 +79,9 @@ var petName: String?
  */
 // write your code here
 
-
+if let petName = petName {
+    print(petName)
+}
 
 
 
@@ -89,7 +93,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -99,6 +105,12 @@ var anotherPetName: String?
  ### 9. Using optional binding, write an if statement that prints "anotherPetName has no value" if it is `nil`; otherwise, print the _unwrapped_ value of `anotherPetName`. What do you expect to see in the console?
  */
 // write your code here
+
+if let anotherPetName = anotherPetName {
+    print(anotherPetName)
+} else {
+    print("another pet has no name")
+}
 
 
 
@@ -113,8 +125,11 @@ var anotherPetName: String?
  */
 // write your code here
 
+let optionalString: String?
 
+optionalString = "Urza"
 
+print(optionalString)
 
 
 
@@ -127,9 +142,9 @@ var anotherPetName: String?
 // write your code here
 
 
+let anotherOptionalString: String? = nil
 
-
-
+anotherOptionalString = "Not gonna happen"
 
 
 
